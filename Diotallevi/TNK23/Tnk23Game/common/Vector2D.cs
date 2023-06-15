@@ -1,6 +1,6 @@
 using System;
 
-namespace Tnk23Game.common
+namespace Tnk23Game.Common
 {
     /// <summary>
     /// Represents a two-dimensional vector.

@@ -1,5 +1,5 @@
 
-namespace Tnk23Test.common
+namespace Tnk23Test.Common
 {
     /// <summary>
     /// Unit tests for the <see cref="Directions"/> class.

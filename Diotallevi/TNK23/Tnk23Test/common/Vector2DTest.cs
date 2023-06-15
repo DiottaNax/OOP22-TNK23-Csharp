@@ -1,6 +1,6 @@
 
 
-namespace Tnk23Test.common
+namespace Tnk23Test.Common
 {
     [TestClass]
     public class Vector2DTest

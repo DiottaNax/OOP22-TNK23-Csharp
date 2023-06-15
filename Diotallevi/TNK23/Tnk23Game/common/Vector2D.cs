@@ -1,5 +1,3 @@
-using System;
-
 namespace Tnk23Game.Common
 {
     /// <summary>

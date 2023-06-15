@@ -1,4 +1,3 @@
-
 namespace Tnk23Game.Graph
 {
     public interface IGraph<N>

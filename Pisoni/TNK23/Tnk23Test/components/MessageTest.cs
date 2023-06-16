@@ -1,6 +1,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace it.unibo.tnk23.game.components
+namespace it.unibo.Tnk23Test.components
 {
 
     /// <summary>

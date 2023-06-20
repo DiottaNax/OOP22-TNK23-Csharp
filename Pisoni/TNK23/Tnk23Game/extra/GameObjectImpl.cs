@@ -1,3 +1,5 @@
+using Tnk23Game.Components;
+
 namespace Tnk23Game.extra
 {
     public class GameObjectImpl : IGameObject
@@ -12,6 +14,8 @@ namespace Tnk23Game.extra
         public object Power { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public object Direction { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public Point2D Position { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
+        public void AddComponent(IComponent comp) =>  throw new NotImplementedException();
+        public IComponent? GetComponent<T>() =>  throw new NotImplementedException();
         public Point2D GetPosition() => throw new NotImplementedException();
         public object GetPower() => throw new NotImplementedException();
         public int GetRotation() => throw new NotImplementedException();

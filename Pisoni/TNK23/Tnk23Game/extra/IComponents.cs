@@ -1,4 +1,4 @@
-namespace Tnk23Game.Components
+namespace Tnk23Game.extra
 {
     /// <summary>
     /// An interface that represents a game component.
@@ -6,6 +6,7 @@ namespace Tnk23Game.Components
     /// </summary>
     public interface IComponent
     {
+        bool IsCollidingWith(Rect2D s);
         /// <summary>
         /// Updates the component's state or carries out any required operations.
         /// Is typically invoked once per frame.

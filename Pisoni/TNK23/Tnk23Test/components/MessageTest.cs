@@ -10,6 +10,14 @@ namespace Tnk23Test.components
     [TestClass]
     public class MessageTest
     {
+        private class TestMessage : IMessage<string>
+        {
+            public string GetMessage()
+            {
+                return "Hello World!";
+            }
+        }
+        
         /// <summary>
         /// Test case for the getMessage() method.
         /// It verifies that the method returns the correct message.
@@ -17,10 +25,7 @@ namespace Tnk23Test.components
         [TestMethod]
         public void TestGetMessage()
         {
-            IMessage<string> message = new IMessage<string>
-            {
-                GetMessage = () => "Hello World!"
-            };
+            IMessage<string> message = new TestMessage();
             Assert.AreEqual("Hello World!", message.GetMessage());
         }
     }

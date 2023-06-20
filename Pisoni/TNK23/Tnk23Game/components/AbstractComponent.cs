@@ -40,6 +40,7 @@ namespace Tnk23Game.Components
         /// </summary>
         /// <returns>The World instance associated with this instance.</returns>
         public IWorld GetWorld() => _world;
+        public bool IsCollidingWith(Rect2D s) => throw new NotImplementedException();
         public abstract void Update();
     }
 }

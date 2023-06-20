@@ -7,6 +7,8 @@ namespace Tnk23Game.extra
         void AddEntity(IGameObject obj);
         void RemoveEntity(IGameObject obj);
         void NotifyEvent(IWorldEvent we);
+        List<IGameObject> GetPlayers();
+        HashSet<IGameObject> GetEntities();
 
     }
 }

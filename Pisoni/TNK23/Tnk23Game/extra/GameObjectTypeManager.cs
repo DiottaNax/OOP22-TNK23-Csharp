@@ -51,14 +51,14 @@ namespace Tnk23Game.extra
 
             return toReturn;
         }
-        public static String GetBulletType()
-        {
-            return "bullet";
-        }
 
-        internal static double GetWidth(Type actorType)
-        {
-            throw new NotImplementedException();
-        }
+        public static String GetEnemyType() => "enemy";
+
+        public static String GetBulletType() => "bullet";
+
+        internal static double GetWidth(Type actorType) => throw new NotImplementedException();
+            
+
+        internal static bool IsObstacle(Type type) => throw new NotImplementedException();
     }
 }

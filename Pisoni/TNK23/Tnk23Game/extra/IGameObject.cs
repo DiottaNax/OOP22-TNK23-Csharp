@@ -1,3 +1,5 @@
+using Tnk23Game.Components;
+
 namespace Tnk23Game.extra
 {
     public interface IGameObject
@@ -10,5 +12,7 @@ namespace Tnk23Game.extra
         object GetPower();
         int GetRotation();
         void NotifyComponents<X>(IMessage<X> message, Type nc) where X : class;
+        void AddComponent(IComponent comp);
+        IComponent? GetComponent<T>();
     }
 }

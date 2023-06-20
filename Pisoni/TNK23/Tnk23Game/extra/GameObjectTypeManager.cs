@@ -56,5 +56,9 @@ namespace Tnk23Game.extra
             return "bullet";
         }
 
+        internal static double GetWidth(Type actorType)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

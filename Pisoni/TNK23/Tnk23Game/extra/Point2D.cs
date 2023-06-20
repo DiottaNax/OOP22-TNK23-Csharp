@@ -18,5 +18,10 @@ namespace Tnk23Game.extra
         {
             return y;
         }
+
+        internal Point2D Sum(Vector2D vector2D)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

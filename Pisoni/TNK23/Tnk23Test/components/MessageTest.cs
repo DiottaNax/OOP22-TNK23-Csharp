@@ -1,6 +1,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Tnk23Game.extra;
 
-namespace it.unibo.Tnk23Test.components
+namespace Tnk23Test.components
 {
 
     /// <summary>
@@ -16,9 +17,9 @@ namespace it.unibo.Tnk23Test.components
         [TestMethod]
         public void TestGetMessage()
         {
-            Message message = new Message()
+            IMessage<string> message = new IMessage<string>
             {
-            GetMessage = () => "Hello World!"
+                GetMessage = () => "Hello World!"
             };
             Assert.AreEqual("Hello World!", message.GetMessage());
         }

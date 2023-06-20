@@ -33,18 +33,14 @@ namespace Tnk23Game.Components
         /// Retrieves the GameObject associated with this instance.
         /// </summary>
         /// <returns>The GameObject associated with this instance.</returns>
-        public IGameObject GetEntity()
-        {
-            return _entity;
-        }
+        public IGameObject GetEntity() => _entity;
 
         /// <summary>
         /// Retrieves the World instance associated with this instance.
         /// </summary>
         /// <returns>The World instance associated with this instance.</returns>
-        public IWorld GetWorld()
-        {
-            return _world;
-        }
+        public IWorld GetWorld() => _world;
+
+        public void Update() => throw new NotImplementedException();
     }
 }

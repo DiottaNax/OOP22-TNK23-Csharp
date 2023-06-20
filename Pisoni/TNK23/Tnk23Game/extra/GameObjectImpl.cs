@@ -7,7 +7,7 @@ namespace Tnk23Game.extra
         public GameObjectImpl(String type, Point2D position)
         {
             _type = type;
-            _position = new Point2D(0, 0);
+            _position = new Point2D(position.X, position.Y);
         }
         public object Power { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }
         public object Direction { get => throw new NotImplementedException(); set => throw new NotImplementedException(); }

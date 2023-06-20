@@ -5,6 +5,8 @@ namespace Tnk23Game.extra
     /// </summary>
     public static class Configuration
     {
+        public const int FPS = 120;
+
         private const int ORIGINAL_TILE_SIZE = 24;
         
         public static readonly double SCALE_FACTOR = ORIGINAL_TILE_SIZE;

@@ -9,7 +9,7 @@ namespace Tnk23Game.Components
     /// </summary>
     public class BulletComponent : AbstractComponent, INotifiableComponent
     {
-        private String shooterType;
+        private String _shooterType;
 
         /// <summary>
         /// Constructs a new BulletComponent with the specified entity and world.
@@ -18,13 +18,13 @@ namespace Tnk23Game.Components
         /// <param name="world">The World in which the bullet component exists.</param>
         public BulletComponent(IGameObject entity, IWorld world) : base(entity, world)
         {
-            shooterType = GameObjectTypeManager.GetBulletType();
+            _shooterType = GameObjectTypeManager.GetBulletType();
         }
 
         /// <summary>
         /// This method is empty as the bullet component does not require specific update logic.
         /// </summary>
-        public new void Update()
+        public override void Update()
         {
         }
 
@@ -38,7 +38,7 @@ namespace Tnk23Game.Components
             var _message = x.GetMessage();
             if (_message is IGameObject obj)
             {
-                shooterType = obj.GetType().ToString();
+                _shooterType = obj.GetType().ToString();
             }
         }
 
@@ -48,7 +48,7 @@ namespace Tnk23Game.Components
         /// <returns>The type of the shooter.</returns>
         public String GetShooter()
         {
-            return shooterType;
+            return _shooterType;
         }
     }
 }

@@ -10,18 +10,19 @@ namespace Tnk23Game.extra
         public Point2D(double x, double y)
         {
         }
-        public double GetX()
+
+        public double X
         {
-            return x;
-        }
-        public double GetY()
-        {
-            return y;
+            get { return x; }
+            set { x = value; }
         }
 
-        internal Point2D Sum(Vector2D vector2D)
+        public double Y
         {
-            throw new NotImplementedException();
+            get { return y; }
+            set { y = value; }
         }
+
+        internal Point2D Sum(Vector2D vector2D) =>  throw new NotImplementedException();
     }
 }

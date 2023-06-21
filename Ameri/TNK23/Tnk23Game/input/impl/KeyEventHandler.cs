@@ -1,6 +1,6 @@
 using Tnk23Game.Input.Api;
 
-namespace it.unibo.tnk23.input.impl
+namespace Tnk23Game.Input.Impl
 {
     /// <summary>
     /// The KeyEventHandler class handles key events and notifies KeyboardInputControllers.

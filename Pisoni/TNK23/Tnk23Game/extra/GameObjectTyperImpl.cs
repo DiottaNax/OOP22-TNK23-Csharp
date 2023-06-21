@@ -1,5 +1,6 @@
 namespace Tnk23Game.extra
 {
+    // This class is made to avoid errors in others classes
     public sealed class IGameObjectTypeImpl : IGameObjectType
     {
         private readonly long _width;

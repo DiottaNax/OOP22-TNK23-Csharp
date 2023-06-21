@@ -4,6 +4,7 @@ using System.Diagnostics;
 
 namespace Tnk23Game.extra
 {
+    // This class is made to avoid errors in others classes
     public static class GameObjectTypeManager
     {
         private static readonly TraceSource Logger = new TraceSource("TypeObjectFactoryLogger");

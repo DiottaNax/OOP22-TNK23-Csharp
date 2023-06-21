@@ -1,8 +1,6 @@
 namespace Tnk23Game.extra
 {
-    /// <summary>
-    /// Rappresenta un rettangolo bidimensionale nello spazio.
-    /// </summary>
+    // This class is made to avoid errors in others classes
     public class Rect2D : Shape
     {
         private int _original_tile_size1;

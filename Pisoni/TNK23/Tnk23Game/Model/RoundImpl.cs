@@ -3,8 +3,8 @@ using Tnk23Game.extra;
 namespace Tnk23Game.Model
 {
     /// <summary>
-    /// Implementazione dell'interfaccia Round che rappresenta un turno di gioco.
-    /// La classe RoundImpl contiene l'implementazione della logica che gestisce il comportamento e la progressione di un turno di gioco.
+    /// Implementation of the Round interface that represents a game round.
+    /// The RoundImpl class contains the implementation of the logic that manages the behavior and progression of a game round.
     /// </summary>
     public class RoundImpl : IRound
     {
@@ -22,9 +22,9 @@ namespace Tnk23Game.Model
         private readonly Random _random;
 
         /// <summary>
-        /// Costruisce una nuova istanza di RoundImpl con il mondo specificato.
+        /// Constructs a new instance of RoundImpl with the specified world.
         /// </summary>
-        /// <param name="world">Il mondo di gioco associato a questo turno.</param>
+        /// <param name="world">The game world associated with this round.</param>
         public RoundImpl(IWorld world)
         {
             _totalEnemies = 0;
@@ -44,50 +44,50 @@ namespace Tnk23Game.Model
         }
 
         /// <summary>
-        /// Ottiene la lista di nemici nel turno corrente.
+        /// Gets the list of enemies in the current round.
         /// </summary>
-        /// <returns>La lista di nemici.</returns>
+        /// <returns>The list of enemies.</returns>
         public List<IGameObject> GetEnemies() => _enemies;
 
         /// <summary>
-        /// Verifica se il turno corrente è terminato.
+        /// Checks if the current round has ended.
         /// </summary>
-        /// <returns><c>true</c> se il turno è terminato, <c>false</c> altrimenti.</returns>
+        /// <returns><c>true</c> if the round has ended, <c>false</c> otherwise.</returns>
         public bool IsOver() => _totalEnemies == 0;
 
         /// <summary>
-        /// Ottiene il numero del turno corrente.
+        /// Gets the number of the current round.
         /// </summary>
-        /// <returns>Il numero del turno.</returns>
+        /// <returns>The round number.</returns>
         public int GetRound() => _round;
 
         /// <summary>
-        /// Ottiene il mondo associato al turno.
+        /// Gets the world associated with the round.
         /// </summary>
-        /// <returns>L'oggetto World.</returns>
+        /// <returns>The World object.</returns>
         public IWorld GetWorld() => _world;
 
         /// <summary>
-        /// Ottiene il numero di nemici generati casualmente nel turno corrente.
+        /// Gets the number of randomly generated enemies in the current round.
         /// </summary>
-        /// <returns>Il numero di nemici casuali.</returns>
+        /// <returns>The number of random enemies.</returns>
         public int GetRandomEnemiesNum() => _numRandomEnemies;
 
         /// <summary>
-        /// Ottiene il numero di nemici controllati dall'intelligenza artificiale nel turno corrente.
+        /// Gets the number of enemies controlled by artificial intelligence in the current round.
         /// </summary>
-        /// <returns>Il numero di nemici controllati dall'IA.</returns>
+        /// <returns>The number of AI-controlled enemies.</returns>
         public int GetAIEnemiesNum() => _numFollowTargetEnemies + _numTowerEnemies;
 
         /// <summary>
-        /// Ottiene il numero totale di nemici vivi nel turno corrente.
+        /// Gets the total number of alive enemies in the current round.
         /// </summary>
-        /// <returns>Il numero totale di nemici vivi.</returns>
+        /// <returns>The total number of alive enemies.</returns>
         public int GetTotalEnemies() => _totalEnemies;
 
         /// <summary>
-        /// Aggiorna lo stato del turno.
-        /// Questo metodo viene chiamato per aggiornare la logica e la progressione del turno.
+        /// Updates the state of the round.
+        /// This method is called to update the logic and progression of the round.
         /// </summary>
         public void Update()
         {
@@ -104,14 +104,14 @@ namespace Tnk23Game.Model
         }
 
         /// <summary>
-        /// Avvia il turno corrente.
-        /// Questo metodo viene chiamato per iniziare un nuovo turno quando quello precedente termina.
+        /// Starts the current round.
+        /// This method is called to begin a new round when the previous one ends.
         /// </summary>
         public void StartRound() => _spawn.StartSpawn();
 
         /// <summary>
-        /// Notifica al turno la morte di un nemico.
-        /// Questo metodo viene chiamato per informare il turno che un nemico è stato ucciso.
+        /// Notifies the round of an enemy's death.
+        /// This method is called to inform the round that an enemy has been killed.
         /// </summary>
         public void NotifyEnemyDeath() => _totalEnemies--;
 

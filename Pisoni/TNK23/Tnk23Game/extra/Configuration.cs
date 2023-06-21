@@ -1,8 +1,6 @@
 namespace Tnk23Game.extra
 {
-    /// <summary>
-    /// Configuration class that contains various constants and settings for the game.
-    /// </summary>
+    // This class is made to avoid errors in others classes
     public static class Configuration
     {
         public const int GRID_SIZE = 19;

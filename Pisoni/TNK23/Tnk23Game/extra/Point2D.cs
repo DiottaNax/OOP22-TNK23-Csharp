@@ -1,8 +1,6 @@
 namespace Tnk23Game.extra
 {
-    /// <summary>
-    /// Represents a point in a two-dimensional space.
-    /// </summary>
+    // This class is made to avoid errors in others classes
     public class Point2D
     {
         private double x;

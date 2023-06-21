@@ -1,5 +1,6 @@
 namespace Tnk23Game.extra
 {
+    // This class is made to avoid errors in others classes
     public class AiControllerFactoryImpl : AiControllerFactory
     {
         private readonly GameGraph _graph;

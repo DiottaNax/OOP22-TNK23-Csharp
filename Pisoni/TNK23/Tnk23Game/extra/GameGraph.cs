@@ -1,9 +1,6 @@
 namespace Tnk23Game.extra
 {
-    /// <summary>
-    /// The <c>GameGraph</c> class represents a graph specifically designed for the game environment.
-    /// It extends the functionality of the underlying graph implementation by adding game-specific features.
-    /// </summary>
+    // This class is made to avoid errors in others classes
     public class GameGraph : VisitableGraphDecorator<VisitableGridGraphNode>
     {
         private List<IGameObject> obstacles;

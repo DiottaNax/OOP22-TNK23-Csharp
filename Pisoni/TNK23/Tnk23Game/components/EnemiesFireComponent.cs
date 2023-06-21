@@ -1,5 +1,3 @@
-
-
 using Tnk23Game.extra;
 
 namespace Tnk23Game.Components

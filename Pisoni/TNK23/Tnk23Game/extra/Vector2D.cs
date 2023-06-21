@@ -15,9 +15,6 @@ namespace Tnk23Game.extra
             set => _x = value;
         }
 
-        /// <summary>
-        /// Gets or sets the _y-component of the vector.
-        /// </summary>
         public double Y
         {
             get => _y;

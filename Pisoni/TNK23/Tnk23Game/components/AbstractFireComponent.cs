@@ -29,7 +29,7 @@ namespace Tnk23Game.Components
         /// <inheritdoc/>
         public override void Update()
         {
-            currentFrame++;
+            this.currentFrame++;
             if (CanShoot())
             {
                 currentFrame = 0;
@@ -44,7 +44,7 @@ namespace Tnk23Game.Components
         /// <returns>The current frame number.</returns>
         public int GetCurrentFrame()
         {
-            return currentFrame;
+            return this.currentFrame;
         }
 
         /// <summary>

@@ -2,11 +2,11 @@ namespace Tnk23Game.extra
 {
     public enum Directions
     {
-        NORTH,
-        SOUTH,
-        WEST,
-        EAST,
-        NONE
+        North,
+        South,
+        West,
+        East,
+        None
     }
 
     public static class DirectionsExtensions
@@ -15,13 +15,13 @@ namespace Tnk23Game.extra
         {
             switch (direction)
             {
-                case Directions.NORTH:
+                case Directions.North:
                     return new Vector2D(0, -1);
-                case Directions.SOUTH:
+                case Directions.South:
                     return new Vector2D(0, 1);
-                case Directions.WEST:
+                case Directions.West:
                     return new Vector2D(-1, 0);
-                case Directions.EAST:
+                case Directions.East:
                     return new Vector2D(1, 0);
                 default:
                     return new Vector2D(0, 0);
@@ -37,15 +37,15 @@ namespace Tnk23Game.extra
             switch (angle)
             {
                 case northAngle:
-                    return Directions.NORTH;
+                    return Directions.North;
                 case eastAngle:
-                    return Directions.EAST;
+                    return Directions.East;
                 case westAngle:
-                    return Directions.WEST;
+                    return Directions.West;
                 case southAngle:
-                    return Directions.SOUTH;
+                    return Directions.South;
                 default:
-                    return Directions.NONE;
+                    return Directions.None;
             }
         }
     }

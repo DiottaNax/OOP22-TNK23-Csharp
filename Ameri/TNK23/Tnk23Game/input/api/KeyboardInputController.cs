@@ -1,5 +1,3 @@
-using Tnk23Game.Input;
-
 namespace Tnk23Game.Input.Api
 {
     /// <summary>

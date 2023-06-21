@@ -16,7 +16,7 @@ namespace Tnk23Game.Model
         private readonly List<IGameObject> _activeEnemies;
         private readonly List<Rect2D> _spawns;
         private readonly Timer _timer = new Timer();
-        private readonly Random random = new Random();
+        private readonly Random _random = new Random();
 
         /// <summary>
         /// Constructs a new instance of the <see cref="SpawnImpl"/> class with the specified delay and game round.
@@ -105,7 +105,7 @@ namespace Tnk23Game.Model
                 .Select(s => s.Pos)
                 .ToList();
             
-            return pos.Count > 0 ? (Point2D?)pos[random.Next(pos.Count)] : null;
+            return pos.Count > 0 ? (Point2D?)pos[_random.Next(pos.Count)] : null;
         }
 
         private bool IsEnemyDead(IGameObject enemy)

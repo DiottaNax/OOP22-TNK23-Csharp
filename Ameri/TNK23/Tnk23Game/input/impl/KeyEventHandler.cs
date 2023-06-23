@@ -8,7 +8,7 @@ namespace Tnk23Game.Input.Impl
     /// </summary>
     public class KeyEventHandler
     {
-        private List<KeyboardInputController> inputControllers;
+        private List<IKeyboardInputController> inputControllers;
 
         /// <summary>
         /// Constructs a new KeyEventHandler object.
@@ -16,7 +16,7 @@ namespace Tnk23Game.Input.Impl
         /// </summary>
         public KeyEventHandler()
         {
-            this.inputControllers = new List<KeyboardInputController>();
+            this.inputControllers = new List<IKeyboardInputController>();
         }
 
         /// <summary>
@@ -41,7 +41,7 @@ namespace Tnk23Game.Input.Impl
         /// Adds an input controller to the list of registered input controllers.
         /// </summary>
         /// <param name="k">The KeyboardInputController to be added.</param>
-        public void AddInputController(KeyboardInputController k)
+        public void AddInputController(IKeyboardInputController k)
         {
             this.inputControllers.Add(k);
         }
@@ -50,7 +50,7 @@ namespace Tnk23Game.Input.Impl
         /// Removes an input controller from the list of registered input controllers.
         /// </summary>
         /// <param name="k">The KeyboardInputController to be removed.</param>
-        public void RemoveInputController(KeyboardInputController k)
+        public void RemoveInputController(IKeyboardInputController k)
         {
             this.inputControllers.Remove(k);
         }

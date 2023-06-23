@@ -1,4 +1,4 @@
-namespace Tnk23Game.common
+namespace Tnk23Game.Common
 {
     /// <summary>
     /// The Directions enum represents different directions in a two-dimensional space.

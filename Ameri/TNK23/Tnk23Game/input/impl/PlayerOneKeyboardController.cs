@@ -1,5 +1,5 @@
 using Tnk23Game.Input.Api;
-using Tnk23Game.common;
+using Tnk23Game.Common;
 
 namespace Tnk23Game.Input.Impl
 {
@@ -8,7 +8,7 @@ namespace Tnk23Game.Input.Impl
     /// and represents a keyboard controller for player one that provides directional input
     /// and shooting functionality.
     /// </summary>
-    public class PlayerOneKeyboardController : KeyboardInputController
+    public class PlayerOneKeyboardController : IKeyboardInputController
     {
         private Directions direction = Directions.NONE;
         private bool isShooting;

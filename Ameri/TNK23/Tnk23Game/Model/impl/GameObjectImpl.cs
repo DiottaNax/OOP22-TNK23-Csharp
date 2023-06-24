@@ -52,10 +52,9 @@ namespace Tnk23Game.Model.Impl
         }
 
         /// <inheritdoc/>
-        public void NotifyComponents<X>(IMessage<X> message, Type nc)
-            where X : class
+        public void NotifyComponents<X, TComponent>(IMessage<X> message, TComponent nc) where TComponent : INotifiableComponent
         {
-            foreach (var component in components.Where(c => nc.IsInstanceOfType(c)))
+            foreach (var component in components.Where(c => nc.GetType().IsInstanceOfType(c)))
             {
                 ((INotifiableComponent)component).Receive(message);
             }
@@ -83,7 +82,7 @@ namespace Tnk23Game.Model.Impl
         }
 
         /// <inheritdoc/>
-        public C? GetComponent<C>(Type clas) where C : IComponent
+        public C? GetComponent<C>(Type compClass) where C : IComponent
         {
             return components.OfType<C>().FirstOrDefault();
         }
@@ -122,21 +121,6 @@ namespace Tnk23Game.Model.Impl
         public double GetRotation()
         {
             return rotation;
-        }
-
-        public void NotifyComponents<T, C>(IMessage<T> message, C nc) where C : INotifiableComponent
-        {
-            throw new NotImplementedException();
-        }
-
-        C? IGameObject.GetComponent<C>(Type compClass) where C : default
-        {
-            throw new NotImplementedException();
-        }
-
-        Point2D IGameObject.GetPosition()
-        {
-            throw new NotImplementedException();
         }
     }
 }

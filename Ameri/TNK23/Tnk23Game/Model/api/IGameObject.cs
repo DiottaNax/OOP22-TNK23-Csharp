@@ -31,7 +31,7 @@ namespace Tnk23Game.Model.Api
         /// <typeparam name="X">The type of the message.</typeparam>
         /// <param name="message">The message to notify.</param>
         /// <param name="nc">The class of the notifiable component.</param>
-        void NotifyComponents<T, C>(IMessage<T> message, C nc) where C : INotifiableComponent;
+        void NotifyComponents<X, TComponent>(IMessage<X> message, TComponent nc) where TComponent : INotifiableComponent;
 
         /// <summary>
         /// Retrieves the position of the game object.

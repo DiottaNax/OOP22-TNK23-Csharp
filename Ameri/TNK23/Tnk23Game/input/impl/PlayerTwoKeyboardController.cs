@@ -4,7 +4,7 @@ using Tnk23Game.Common;
 namespace Tnk23Game.Input.Impl
 {
     /// <summary>
-    /// The PlayerOneKeyboardController class implements the KeyboardInputController interface
+    /// The PlayerTwoKeyboardController class implements the KeyboardInputController interface
     /// and represents a keyboard controller for player one that provides directional input
     /// and shooting functionality.
     /// </summary>

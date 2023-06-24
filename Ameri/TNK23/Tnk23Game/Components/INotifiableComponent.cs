@@ -2,7 +2,7 @@ namespace Tnk23Game.Components
 {
     /// <summary>
     /// An interface that represents a notifiable game component.
-    /// Notifiable components extend the basic functionality of <see cref="Component"/> by allowing them to receive messages.
+    /// Notifiable components extend the basic functionality of <see cref="IComponent"/> by allowing them to receive messages.
     /// </summary>
     public interface INotifiableComponent : IComponent
     {

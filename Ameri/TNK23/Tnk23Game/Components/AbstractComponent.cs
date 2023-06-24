@@ -3,7 +3,7 @@ using Tnk23Game.Model.Api;
 namespace Tnk23Game.Components
 {
     /// <summary>
-    /// An abstract base class implementing the <see cref="Component"/> interface.
+    /// An abstract base class implementing the <see cref="IComponent"/> interface.
     /// It provides common functionality and fields for components.
     /// </summary>
     public abstract class AbstractComponent : IComponent
@@ -40,6 +40,7 @@ namespace Tnk23Game.Components
             return world;
         }
 
+        /// <inheritdoc/>
         public void Update()
         {
             throw new NotImplementedException();
